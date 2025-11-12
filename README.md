@@ -49,7 +49,7 @@ Purpose       : Batch spell verification for all files in a target folder.ã€€  ã
     );
 ~~~
 
-<img width="190" height="122" alt="image" src="https://github.com/user-attachments/assets/6732a02a-0c9c-4c93-89d1-5454f0225874" />    
+<img width="190" height="122" alt="image" src="https://github.com/user-attachments/assets/6732a02a-0c9c-4c93-89d1-5454f0225874" />         
    
 
 
