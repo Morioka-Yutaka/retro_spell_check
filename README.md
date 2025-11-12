@@ -61,14 +61,18 @@ Purpose       : Batch spell verification for all files in a target folder.　  �
 
 <img width="540" height="410" alt="image" src="https://github.com/user-attachments/assets/7f577f87-4bf9-4501-96bf-b48399aad1df" />
 
+To prevent terms like “proc” or “ttest” from triggering spell checks, create an additional dictionary in a text file and load it.
+
+<img width="130" height="98" alt="image" src="https://github.com/user-attachments/assets/970b7c51-fbbf-4a5f-8e02-2e1c43950142" />　　
 
 ~~~sas
 %retro_spell_check(
 target_folder = D:\in
 ,output_folder =D:\out
 ,extend_dictionary_file=D:\add_dic.txt
-
 )
-
 ~~~
+
+<img width="508" height="246" alt="image" src="https://github.com/user-attachments/assets/a33f6a74-1e52-4f2c-aa75-b0a64f37974f" />
+
 ---
