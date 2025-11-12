@@ -3,28 +3,29 @@ Batch spell verification for all files in a target folder. For each file, runs P
 
 <img width="360" height="360" alt="Image" src="https://github.com/user-attachments/assets/faf23728-e2d9-4b72-933d-ef79a7eb2d4d" />
 
-## `%retro_spell_check()` macro <a name="retrospellcheck-macro-1"></a> ######
+## `%retro_spell_check()` macro <a name="retrospellcheck-macro-1"></a> ###### 
+Purpose       : Batch spell verification for all files in a target folder.　  　
+                  For each file, runs PROC SPELL with optional custom dictionary,  
+                  writes the spell output to a per-file .txt, aggregates results,  
+                  and exports a review-friendly Excel report.  
 
-Macro name retro_spell_check  
-Purpose       : Batch spell verification for all files in a target folder.
-                  For each file, runs PROC SPELL with optional custom dictionary,
-                  writes the spell output to a per-file .txt, aggregates results,
-                  and exports a review-friendly Excel report.
+### Assumptions :  
+~~~text
+    - PROC SPELL is an *undocumented* and unsupported SAS procedure.  
+      It may not be available or functional in modern environments such as SAS Viya.  
+~~~
 
-Assumptions :
-    - PROC SPELL is an *undocumented* and unsupported SAS procedure.
-      It may not be available or functional in modern environments such as SAS Viya.
+ ### Description   :  
+    1) (Optional) Builds a custom spell dictionary from a plain-text word list.  
+    2) Iterates over files in &target_folder.  
+    3) For each file:  
+         - Routes PROC SPELL output to "&output_folder\<filename>.txt".  
+         - Uses the custom dictionary if provided.  
+    4) Reads all generated .txt logs, extracts candidate words,  
+       pivots them to "word * files", and outputs to Excel.  
 
-  Description   :
-    1) (Optional) Builds a custom spell dictionary from a plain-text word list.
-    2) Iterates over files in &target_folder.
-    3) For each file:
-         - Routes PROC SPELL output to "&output_folder\<filename>.txt".
-         - Uses the custom dictionary if provided.
-    4) Reads all generated .txt logs, extracts candidate words,
-       pivots them to "word * files", and outputs to Excel.
-
-  Parameters    :
+  ### Parameters    :  
+  ~~~sas
     target_folder=
       Path to the input folder containing files to check.
       Example: D:\Projects\Docs\in
@@ -38,13 +39,23 @@ Assumptions :
       one per line. If provided, a WORK catalog dictionary is created and
       used by PROC SPELL.
       Example: D:\Projects\Docs\dic\add_dic.txt
+~~~
 
-
-  Usage Example :
+ ###  Usage Example :
+ ~~~sas
     %retro_spell_check(
         target_folder = D:\in,
         output_folder = D:\out
     );
+~~~
 
-  
+~~~sas
+%retro_spell_check(
+target_folder = D:\in
+,output_folder =D:\out
+,extend_dictionary_file=D:\add_dic.txt
+
+)
+
+~~~
 ---
