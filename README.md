@@ -60,8 +60,8 @@ Purpose       : Batch spell verification for all files in a target folder.　  �
 ▽  
 
 <img width="540" height="410" alt="image" src="https://github.com/user-attachments/assets/7f577f87-4bf9-4501-96bf-b48399aad1df" />  
-
-<img width="127" height="117" alt="image" src="https://github.com/user-attachments/assets/ea7533ec-77e1-4c32-a400-b3acbd1faf6a" />
+  
+<img width="254" height="234" alt="image" src="https://github.com/user-attachments/assets/ea7533ec-77e1-4c32-a400-b3acbd1faf6a" />
 
 
 
