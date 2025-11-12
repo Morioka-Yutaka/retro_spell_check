@@ -59,9 +59,13 @@ Purpose       : Batch spell verification for all files in a target folder.　  �
 ▽  
 ▽  
 
-<img width="540" height="410" alt="image" src="https://github.com/user-attachments/assets/7f577f87-4bf9-4501-96bf-b48399aad1df" />
+<img width="540" height="410" alt="image" src="https://github.com/user-attachments/assets/7f577f87-4bf9-4501-96bf-b48399aad1df" />  
 
-To prevent terms like “proc” or “ttest” from triggering spell checks, create an additional dictionary in a text file and load it.
+<img width="127" height="117" alt="image" src="https://github.com/user-attachments/assets/ea7533ec-77e1-4c32-a400-b3acbd1faf6a" />
+
+
+
+#### To prevent terms like “proc” or “ttest” from triggering spell checks, create an additional dictionary in a text file and load it.
 
 <img width="130" height="98" alt="image" src="https://github.com/user-attachments/assets/970b7c51-fbbf-4a5f-8e02-2e1c43950142" />　　
 
