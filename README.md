@@ -59,7 +59,7 @@ Purpose       : Batch spell verification for all files in a target folder.　  �
 ▽  
 ▽  
 
-<img width="267" height="204" alt="image" src="https://github.com/user-attachments/assets/7f577f87-4bf9-4501-96bf-b48399aad1df" />
+<img width="540" height="410" alt="image" src="https://github.com/user-attachments/assets/7f577f87-4bf9-4501-96bf-b48399aad1df" />
 
 
 ~~~sas
