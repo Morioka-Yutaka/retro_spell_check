@@ -37,8 +37,8 @@ Assumptions :
 
   Usage Example :
     %retro_spell_check(
-        target_folder = D:\Users\10089669\Desktop\spellchl\in,
-        output_folder = D:\Users\10089669\Desktop\spellchl\out
+        target_folder = D:\in,
+        output_folder = D:\out
     );
 
 *//*** HELP END ***/
