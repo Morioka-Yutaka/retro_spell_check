@@ -10,12 +10,12 @@
   
 - Package: retro_spell_check
 - Version: 0.1.0
-- Generated: 2025-11-12T23:45:35
+- Generated: 2025-11-12T23:56:38
 - Author(s): Yutaka Morioka(sasyupi@gmail.com)
 - Maintainer(s): Yutaka Morioka(sasyupi@gmail.com)
 - License: MIT
-- File SHA256: `F*9089F573AE883982C158A6BEC6C84C6758DA45CED8F1D118720D19AD37645B7C` for this version
-- Content SHA256: `C*251B62DD44CF1201901C75F9A4EFDD17A14B29A8839F1C2C1F1A17AC454E6F35` for this version
+- File SHA256: `F*8EA8FEAD46443EFC29290C9D8A093E0480D0328EBE91C546FEBF1DD9EE77CA24` for this version
+- Content SHA256: `C*24136557DC513FA7D022D1348A53CE5FC8FE7A2EB81698770B27EDDE743749AD` for this version
   
 ---
  
@@ -95,8 +95,8 @@ Assumptions :
 
   Usage Example :
     %retro_spell_check(
-        target_folder = D:\Users\10089669\Desktop\spellchl\in,
-        output_folder = D:\Users\10089669\Desktop\spellchl\out
+        target_folder = D:\in,
+        output_folder = D:\out
     );
 
   
