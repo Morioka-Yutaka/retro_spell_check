@@ -49,6 +49,14 @@ Purpose       : Batch spell verification for all files in a target folder.　  �
     );
 ~~~
 
+<img width="95" height="62" alt="image" src="https://github.com/user-attachments/assets/6732a02a-0c9c-4c93-89d1-5454f0225874" />  
+<img width="368" height="238" alt="image" src="https://github.com/user-attachments/assets/2bdf516b-9c4e-48ea-9d63-1e503608c668" />  
+▽  
+▽  
+▽  
+<img width="267" height="204" alt="image" src="https://github.com/user-attachments/assets/7f577f87-4bf9-4501-96bf-b48399aad1df" />
+
+
 ~~~sas
 %retro_spell_check(
 target_folder = D:\in
