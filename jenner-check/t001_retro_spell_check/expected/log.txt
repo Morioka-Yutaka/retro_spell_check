@@ -1,0 +1,59 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: Fileref DOC1 assigned to temp file.
+NOTE: DATA _null_
+
+NOTE: Writing to fileref doc1 (/tmp/work/r_a8f3f0be2ea247ae9fa424730560a017/work/26ce9316-0316-4443-8b66-22c3f65ad1e1/jenner_temp_DOC1_e25e9cf222994fba8c52393cfe1ce54e.tmp)
+NOTE: DATA _null_ completed. Output written to fileref doc1 (/tmp/work/r_a8f3f0be2ea247ae9fa424730560a017/work/26ce9316-0316-4443-8b66-22c3f65ad1e1/jenner_temp_DOC1_e25e9cf222994fba8c52393cfe1ce54e.tmp)
+NOTE: Fileref DOC2 assigned to temp file.
+NOTE: DATA _null_
+
+NOTE: Writing to fileref doc2 (/tmp/work/r_a8f3f0be2ea247ae9fa424730560a017/work/26ce9316-0316-4443-8b66-22c3f65ad1e1/jenner_temp_DOC2_e9553af7b0e44d449c550a8fff6bc331.tmp)
+NOTE: DATA _null_ completed. Output written to fileref doc2 (/tmp/work/r_a8f3f0be2ea247ae9fa424730560a017/work/26ce9316-0316-4443-8b66-22c3f65ad1e1/jenner_temp_DOC2_e9553af7b0e44d449c550a8fff6bc331.tmp)
+NOTE: DATA _raw1
+
+NOTE: Reading from fileref doc1 (work/26ce9316-0316-4443-8b66-22c3f65ad1e1/jenner_temp_DOC1_e25e9cf222994fba8c52393cfe1ce54e.tmp)
+
+NOTE: Read 12 rows from doc1.
+NOTE: Wrote _raw1 (12 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA _raw2
+
+NOTE: Reading from fileref doc2 (work/26ce9316-0316-4443-8b66-22c3f65ad1e1/jenner_temp_DOC2_e9553af7b0e44d449c550a8fff6bc331.tmp)
+
+NOTE: Read 12 rows from doc2.
+NOTE: Wrote _raw2 (12 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA _raw
+
+
+NOTE: Read 12 rows from _raw1.
+NOTE: Read 24 rows from _raw2.
+NOTE: Wrote _raw (24 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA log
+
+
+NOTE: Read 24 rows from _raw.
+NOTE: Wrote log (10 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=log
+
+NOTE: Read 10 rows from log.
+NOTE: Wrote log (10 rows, 2 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=log
+
+NOTE: Created 8 rows.
+NOTE: Output written to /tmp/work/r_a8f3f0be2ea247ae9fa424730560a017/work/26ce9316-0316-4443-8b66-22c3f65ad1e1/log2.avro.
+NOTE: PROC PRINT data=log2
+
+NOTE: PROC PRINT completed: 8 observations printed, 4 variables
