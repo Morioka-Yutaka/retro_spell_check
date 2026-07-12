@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-12T08:50:00Z",
+  "_captured_run_id": "r_a8f3f0be2ea247ae9fa424730560a017",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DATA log",
+    "NOTE: PROC SORT statement used.",
+    "NOTE: PROC TRANSPOSE data=log",
+    "NOTE: PROC PRINT completed: 8 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "output_contains": ["acheive", "occured", "definately"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

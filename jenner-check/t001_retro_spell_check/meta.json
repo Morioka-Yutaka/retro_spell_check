@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_retro_spell_check",
+  "source_file": "retro_spell_check/06_macro/retro_spell_check.sas",
+  "source_blob_sha": "867fc75bbc6e56f6c93de6494d2e09430a648869",
+  "source_commit": "9f345325e08f9bfdd35a0d15fd7f63db00ea660c",
+  "notes": "Exercises the macro's aggregation/reporting pipeline (log-parsing DATA step + SORT/TRANSPOSE word-by-file pivot, lines 91-138 of the original) unchanged, fed with two small inline mock PROC SPELL VERIFY-shaped candidate-word logs (PROC SPELL itself is an undocumented procedure not yet implemented in Jenner, and the macro's own README already flags it as possibly unavailable in modern environments). The macro's final filter/print block (lines 140-152) assigns a DATA step variable literally named LENGTH via 'length=klength(_record);' -- valid SAS (LENGTH is a context-sensitive statement keyword, not a reserved word) but Jenner's parser currently mishandles it in that position (confirmed BUG via sas-expert dispatch; regression test filed in set/, see PR notes). That block is left out of this bundle rather than shipped failing; everything else in the bundle is the author's unmodified logic."
+}

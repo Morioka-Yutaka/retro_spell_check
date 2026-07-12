@@ -1,0 +1,12 @@
+
+   _RECORD  _NAME_  PG_1  PG_2
+----------  ------  ----  ----
+acheive     fname   doc1  doc2
+definately  fname   doc1
+enviroment  fname   doc2
+occured     fname   doc1  doc2
+recieve     fname   doc1
+seperate    fname   doc1
+teh         fname   doc2
+wich        fname   doc2
+
